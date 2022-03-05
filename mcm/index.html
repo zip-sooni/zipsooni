@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1600">
+    <title>MCM</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jquery.simplyscroll.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/mcm_fvcon.png" type="image/x-icon">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+
+    <script src="js/jquery.simplyscroll.js"></script>
+    <script src="js/jquery.simplyscroll.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.visual ul').bxSlider({
+                touchEnabled: (navigator.maxTouchPoints > 0),
+                auto: true,
+                pager: false
+            });
+
+            (function ($) {
+            $(function () { //on DOM ready 
+                $(".main_list ul").simplyScroll();
+            });
+        })(jQuery);
+
+        });
+
+        let mobile_keys = new Array('iPhone', 'iPod', 'Android', 'BlackBerry', 'Windows Phone', 'Windows CE', 'LG',
+            'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia');
+
+        for (let i in mobile_keys) {
+            if (navigator.userAgent.match(mobile_keys[i]) != null) {
+                location.href = "mobile/index.html";
+                break;
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <p class="blind"><a href="#container">본문내용 바로가기</a></p>
+    <header>
+        <div class="center">
+            <h1><a href="index.html"><img src="images/main/logo.png" alt="mcm"></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="sub.html">Women</a>
+                    </li>
+                    <li>
+                        <a href="collection1.html">Men</a>
+                    </li>
+                    <li>
+                        <a href="collection2.html">Backpacks</a>
+                    </li>
+                    <li>
+                        <a href="sub.html">Gifts</a>
+                    </li>
+                    <li>
+                        <a href="collection1.html">Collections</a>
+                    </li>
+                    <li>
+                        <a href="collection2.html">Best Seller</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="util">
+                <ul>
+                    <li><a href="#"><img src="images/main/top_icon1.png" alt="검색하기"></a></li>
+                    <li><a href="#"><img src="images/main/top_icon2.png" alt="마이페이지"></a></li>
+                    <li><a href="#"><img src="images/main/top_icon3.png" alt="장바구니"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="visual" id="container">
+        <ul>
+            <li class="v1"><a href="sub.html"><img src="images/main/main_banner1.jpg"
+                        alt="CLASSIC BAGS PRODUCT MCM의 아이코닉한 비세토스 패턴의 가방과 액세서리를 만나보세요."></a></li>
+            <li class="v2"><a href="sub.html"><img src="images/main/main_banner2.jpg" alt="MCM BEST SELLER"></a></li>
+            <li class="v3"><a href="sub.html"><img src="images/main/main_banner3.jpg" alt></a></li>
+        </ul>
+    </div>
+
+    <div class="main_list">
+        <ul>
+            <li>
+                <a href="sub.html"><img src="images/main/main_swipe1.jpg" alt>
+                    <p>비세토스 오리지널 노트북 슬리브</p>
+                </a>
+            </li>
+            <li>
+                <a href="sub.html"><img src="images/main/main_swipe2.jpg" alt>
+                    <p>비세토스 오리지널 손목 스트랩 지퍼 파우치</p>
+                </a>
+            </li>
+            <li>
+                <a href="sub.html"><img src="images/main/main_swipe3.jpg" alt>
+                    <p>클라라 모노그램드 레더 숄더</p>
+                </a>
+            </li>
+            <li>
+                <a href="sub.html"><img src="images/main/main_swipe4.jpg" alt>
+                    <p>비세토스 오리지널 에센셜 보스턴 백과 AirPods Pro 케이스</p>
+                </a>
+            </li>
+            <li>
+                <a href="sub.html"><img src="images/main/main_swipe5.jpg" alt>
+                    <p>에션셜 비세토스 보스턴</p>
+                </a>
+            </li>
+            <li>
+                <a href="sub.html"><img src="images/main/main_swipe6.jpg" alt>
+                    <p>비세토스 오리지널 노트북 슬리브</p>
+                </a>
+            </li>
+            <li>
+                <a href="sub.html"><img src="images/main/main_swipe7.jpg" alt>
+                    <p>소프트 베를린 비세토스 다기능 크로스바디</p>
+                </a>
+            </li>
+            <li>
+                <a href="sub.html"><img src="images/main/main_swipe8.jpg" alt>
+                    <p>클라식 비세토스 크로스바디</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main_collection">
+        <div>
+            <div>
+                <h3>2021<br> MCM COLLECTION</h3>
+                <p>AW-21 M'ETAVERSE<span>대비가 조화를 이루는 영역, 이것이 바로 메타버스입니다.</span></p>
+                <p><a href="collection2.html">VIEW COLLECTION</a></p>
+            </div>
+            <p><img src="images/main/main_2021collection.jpg" alt="2020collection"></p>
+        </div>
+    </div>
+
+    <div class="mw">
+        <ul>
+            <li>
+                <a href="sub.html"><span class="blind">men's bags</span></a>
+                <div>
+                    <h3>MEN'S BAGS</h3>
+                    <p><a href="sub.html">MORE SELECT</a></p>
+                </div>
+            </li>
+            <li>
+                <a href="sub.html"><span class="blind">women's bags</span></a>
+                <div>
+                    <h3>WOMEN'S BAGS</h3>
+                    <p><a href="sub.html">MORE SELECT</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main_classic">
+        <h3>MCM CLASSIC COLLECTION</h3>
+        <p><a href="collection1.html">VIEW COLLECTION</a></p>
+        <ul>
+            <li><a href="collection1.html"><span class="blind">스타크 백팩</span></a></li>
+            <li><a href="collection1.html"><span class="blind">골드 스터드 비세토스 탬버린 크로스바디</span></a></li>
+            <li><a href="collection1.html"><span class="blind">클라식 비세토스 크로스바디</span></a></li>
+            <li><a href="collection1.html"><span class="blind">패트리샤 비세토스 사첼</span></a></li>
+        </ul>
+    </div>
+
+    <div class="main_story center">
+        <p><img src="images/main/main_story_ban1.jpg" alt></p>
+        <div>
+            <img src="images/main/main_story_ban2.jpg" alt>
+            <h3>MCM STORY</h3>
+            <p>
+                뮌헨 문화의 창조적 르네상스가 정점이었던 1976년에 탄생된 오늘날의 MCM은<br>
+                예술, 음악, 테크놀로지, 여행 등의 유대를 통해 대담하고, 반항적이며, 자유에 대한 열망을 지향한다.
+            </p>
+            <p><a href="#">BRAND STORY</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bottom center">
+            <p><img src="images/main/logo.png" alt="mcm"></p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">고객 서비스</a>
+                        <ul>
+                            <li><a href="#">1:1 고객 문의</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">주문 상태 확인</a></li>
+                            <li><a href="#">배송 조회</a></li>
+                            <li><a href="#">반품 & 교환</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">회사 소개</a>
+                        <ul>
+                            <li><a href="#">MCM 소개</a></li>
+                            <li><a href="#">인재 채용</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">약관</a>
+                        <ul>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">온라인 서비스 이용 약관</a></li>
+                            <li><a href="#">MCLUB 멤버십 이용 약관</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">SNS</a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/footer_face.gif" alt="facebook">
+                                    <span>페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/footer_insta.gif" alt="instagram">
+                                    <span>인스타그램</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/footer_twitter.gif" alt="twitter">
+                                    <span>트위터</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/main/footer_youtube.gif" alt="youtube"><span>유튜브</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/footer_kakao.gif" alt="kakao">
+                                    <span>카카오톡</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <p>
+            이 사이트는 포트폴리오용으로 만들어진 가상 사이트입니다.
+            사이트에 사용된 사진과 내용의 저작권은 MCM에 있습니다.<br>
+            COPYRIGHTⓒ 최의정. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+
+</body>
+
+</html>
